@@ -78,7 +78,8 @@ public class FileUtils {
             return StrUtil.isBlank(extName) ? sha256Hex : sha256Hex + "." + extName;
         }
         // 情况二：基于 content 计算
-        return sha256Hex + '.' + FileTypeUtil.getType(new ByteArrayInputStream(content));
+        String substring = sha256Hex.substring(0,16);
+        return substring + '.' + FileTypeUtil.getType(new ByteArrayInputStream(content));
     }
 
 }

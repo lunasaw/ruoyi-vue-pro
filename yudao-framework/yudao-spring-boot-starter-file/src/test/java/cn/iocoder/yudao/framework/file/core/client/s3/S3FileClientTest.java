@@ -17,7 +17,7 @@ public class S3FileClientTest {
         // 配置成你自己的
         config.setAccessKey("admin");
         config.setAccessSecret("password");
-        config.setBucket("yudaoyuanma");
+        config.setBucket("luna-bucket");
         config.setDomain(null);
         // 默认 9000 endpoint
         config.setEndpoint("http://127.0.0.1:9000");
